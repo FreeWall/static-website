@@ -10,62 +10,62 @@ const btnOutline =
 
 const projects = [
   {
-    year: '2023 · Rock',
-    title: 'Sifon – 100 Hříchů',
-    desc: 'Reedice legendárního alba skupiny Sifon, původně vydaného v roce 1991/1992 na gramofonových deskách a kazetách. Vydáno ve spolupráci s AC MUSIC.',
-    tags: ['Nahrávání', 'Mastering', 'CD'],
+    year: '2024 · Realizace',
+    title: 'Referenční Projekt A',
+    desc: 'Popis úspěšného projektu, který jsme realizovali pro významného klienta. Zaměření na inovace a efektivitu v oblasti X.',
+    tags: ['Strategie', 'Design', 'Implementace'],
   },
   {
-    year: '2022 · Sborová hudba',
-    title: 'Vozilo se na jaře – Domažlický sbor',
-    desc: 'Nahrávka tradiční lidové hudby Domažlického pěveckého sboru. Zachycení autentičnosti a čistoty sborového zpěvu v akusticky přirozeném prostoru.',
-    tags: ['Nahrávání', 'Mix'],
+    year: '2023 · Analýza',
+    title: 'Strategický Rozvoj Pro Klienta B',
+    desc: 'Hloubková analýza procesů a návrh nového směru pro expanzi na trhu. Výsledkem bylo navýšení efektivity o XX %.',
+    tags: ['Analýza', 'Konzultace'],
   },
   {
-    year: '2021 · Rock / Metal',
-    title: 'AKTA X – Rock Band Sifon',
-    desc: 'Energická rocková nahrávka s plným živým zvukem. Kompletní produkce od nahrávání přes mix až po mastering a přípravu pro distribuci.',
-    tags: ['Kompletní produkce', 'Streaming'],
+    year: '2022 · Komplexní Řešení',
+    title: 'Projekt Gama – Digitální Transformace',
+    desc: 'Kompletní přepracování stávajících systémů a jejich modernizace pomocí špičkových technologií současnosti.',
+    tags: ['Transformace', 'Technologie'],
   },
   {
-    year: '2020 · Pop / Rock',
-    title: 'Kolem mě – Rock Band',
-    desc: 'Melodická pop-rocková nahrávka s bohatou instrumentací. Vícevrstvé vokální harmonie a dynamická produkce pro rozhlasový i streamovací formát.',
-    tags: ['Nahrávání', 'Mix', 'Radio master'],
+    year: '2021 · Design',
+    title: 'Vizuální Identita Společnosti X',
+    desc: 'Vytvoření nového vizuálního stylu a značky, která přesně odráží hodnoty a vizi moderního podnikání.',
+    tags: ['Design', 'Branding'],
   },
   {
-    year: '2019 · Dabing',
-    title: 'Komerční spoty – různí klienti',
-    desc: 'Natočení a post-produkce reklamních spotů pro televizní i online distribuci. Voice-over, zvukový design a finální mix pro broadcast.',
-    tags: ['Dabing', 'Post-produkce', 'TV'],
+    year: '2020 · Produkce',
+    title: 'Kampaň Pro Globální Trh',
+    desc: 'Zajištění kompletní produkce a správy kampaně pro oslovení zákazníků napříč různými kanály.',
+    tags: ['Marketing', 'Produkce'],
   },
   {
-    year: 'Průběžně · Karaoke',
-    title: 'Karaoke katalog – 500+ titulů',
-    desc: 'Rozsáhlý katalog českých a slovenských karaoke stop dostupný na karaokesong.eu. Profesionální re-backing a synchronizace textu.',
-    tags: ['Karaoke', 'CDG / MP4'],
+    year: 'Průběžně · Podpora',
+    title: 'Dlouhodobá spolupráce s Partnery',
+    desc: 'Zajištění neustálé technické podpory a rozvoje pro stabilní růst našich klíčových obchodních partnerů.',
+    tags: ['Service', 'SLA'],
   },
 ];
 
-const bands = [
-  { name: 'Sifon', sub: 'Legendární rock, Plzeň' },
-  { name: 'ABBA Star', sub: 'Pop tribute show' },
-  { name: 'Queenways', sub: 'Queen tribute band' },
-  { name: 'Electric Therapy', sub: 'Rock / metal' },
-  { name: 'Domažlický pěvecký sbor', sub: 'Tradiční sborová hudba' },
-  { name: 'Palice', sub: 'Rock band' },
-  { name: 'Artur', sub: 'Rock / pop' },
-  { name: 'Stovky dalších umělců', sub: 'od roku 1991' },
+const clients = [
+  { name: 'Klient 1', sub: 'Lídr v oblasti průmyslu' },
+  { name: 'Společnost Alfa', sub: 'Inovativní technologický startup' },
+  { name: 'Organizace Beta', sub: 'Mezinárodní síť partnerů' },
+  { name: 'Služba Gama', sub: 'Regionální poskytovatel řešení' },
+  { name: 'Firma Delta', sub: 'Specialista na logistiku' },
+  { name: 'Podnik Epsilon', sub: 'E-commerce platforma' },
+  { name: 'Kolektiv Zeta', sub: 'Kreativní studio a agentura' },
+  { name: 'Desítky dalších partnerů', sub: 'Od roku 20XX' },
 ];
 
 export default function ReferencePage() {
   return (
     <>
       <Head>
-        <title>Reference – Accent Recording Studio</title>
+        <title>Reference – Název Firmy</title>
         <meta
           name="description"
-          content="Ukázky práce nahrávacího studia Accent – kapely, umělci a projekty, které jsme natočili."
+          content="Prohlédněte si naše úspěšné projekty a spokojené klienty, se kterými jsme spolupracovali."
         />
       </Head>
 
@@ -73,10 +73,10 @@ export default function ReferencePage() {
         badge="Naše práce"
         title={
           <>
-            Reference & <span className="text-[#f0c040]">Ukázky</span>
+            Reference & <span className="text-[#f0c040]">Projekty</span>
           </>
         }
-        description="Přehled umělců, kapel a projektů, které studio Accent za dobu své existence natočilo."
+        description="Přehled našich úspěšných realizací a dlouhodobých spoluprací s partnery napříč obory."
       />
 
       {/* Projekty */}
@@ -120,21 +120,22 @@ export default function ReferencePage() {
         </div>
       </section>
 
-      {/* Kapely */}
+      {/* Klienti */}
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10">
             <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
-              Umělci & kapely
+              Partneři & Klienti
             </span>
-            <h2 className="h2-section mb-2 text-white">Kdo u nás nahrával</h2>
+            <h2 className="h2-section mb-2 text-white">Kdo nám důvěřuje</h2>
             <span className="mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
             <p className="mt-4 max-w-[56ch] text-[#8888a0]">
-              Výběr z více než 28 let spolupráce s českými a slovenskými interprety.
+              Měli jsme tu čest spolupracovat s významnými značkami i nadějnými projekty od roku
+              20XX.
             </p>
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {bands.map(({ name, sub }, i) => (
+            {clients.map(({ name, sub }, i) => (
               <FadeUp
                 key={name}
                 delay={i * 0.05}
@@ -152,30 +153,30 @@ export default function ReferencePage() {
         </div>
       </section>
 
-      {/* SoundCloud */}
+      {/* portfolio link */}
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
             <span className="mb-4 inline-block rounded-full border border-[rgba(212,160,23,0.35)] bg-[rgba(212,160,23,0.15)] px-3 py-1 text-[0.78rem] font-semibold tracking-[0.08em] text-[#f0c040] uppercase">
-              Audio
+              Portfolio
             </span>
-            <h2 className="h2-section mb-2 text-white">Poslechněte si naší práci</h2>
+            <h2 className="h2-section mb-2 text-white">Prohlédněte si detaily</h2>
             <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
           </FadeUp>
           <FadeUp>
             <div className="mx-auto max-w-[700px] rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center">
               <p className="mb-6 leading-relaxed text-[#8888a0]">
-                Kompletní sbírku nahrávek, demo spotů a ukázek z produkce studia Accent najdete na
-                našem SoundCloud profilu.
+                Podrobné případové studie a další ukázky našich projektů najdete v našem online
+                portfoliu nebo v externí prezentaci.
               </p>
               <a
-                href="https://soundcloud.com"
+                href="https://portfolio.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-lg font-semibold text-[#f0c040] transition-opacity hover:opacity-80"
               >
-                <span className="text-2xl">☁</span>
-                Přejít na SoundCloud →
+                <span>🌐</span>
+                Otevřít portfolio →
               </a>
             </div>
           </FadeUp>
@@ -186,22 +187,22 @@ export default function ReferencePage() {
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[650px] text-center">
           <FadeUp>
-            <h2 className="h2-section mb-3 text-white">Chcete být součástí naší výzvy?</h2>
+            <h2 className="h2-section mb-3 text-white">Máte v plánu nový projekt?</h2>
             <p className="mb-8 text-[#8888a0]">
-              Přidejte se ke stovkám umělců, kteří nám svěřili svůj zvuk.
+              Staňte se naší další úspěšnou referencí. Pomůžeme vám zrealizovat vaše vize.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
                 className={btnPrimary}
               >
-                📞 Domluvit termín
+                ✉️ Poptat spolupráci
               </Link>
               <Link
                 href="/sluzby"
                 className={btnOutline}
               >
-                💰 Zobrazit ceny
+                📋 Naše služby
               </Link>
             </div>
           </FadeUp>

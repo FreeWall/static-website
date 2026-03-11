@@ -3,18 +3,16 @@ import Link from 'next/link';
 const pages = [
   { href: '/', label: 'Úvod' },
   { href: '/about', label: 'O nás' },
-  { href: '/sluzby', label: 'Služby & Ceník' },
+  { href: '/sluzby', label: 'Služby' },
   { href: '/reference', label: 'Reference' },
-  { href: '/karaoke', label: 'Karaoke' },
   { href: '/contact', label: 'Kontakt' },
 ];
 
 const services = [
-  { href: '/sluzby', label: 'Nahrávání' },
-  { href: '/sluzby', label: 'Mastering' },
-  { href: '/sluzby', label: 'Dabing' },
-  { href: '/karaoke', label: 'Karaoke produkce' },
-  { href: '/sluzby', label: 'Agentura' },
+  { href: '/sluzby', label: 'Hlavní Služba A' },
+  { href: '/sluzby', label: 'Hlavní Služba B' },
+  { href: '/sluzby', label: 'Doplňková Služba' },
+  { href: '/sluzby', label: 'Ostatní' },
 ];
 
 export default function Footer() {
@@ -24,13 +22,13 @@ export default function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="font-outfit text-xl font-extrabold text-white">Accent</div>
+            <div className="font-outfit text-xl font-extrabold text-white">Název Firmy</div>
             <div className="mb-3 text-[0.7rem] tracking-[0.18em] text-[#d4a017] uppercase">
-              Recording Studio
+              Podtitul nebo Obor
             </div>
             <p className="text-sm leading-relaxed text-[#8888a0]">
-              Profesionální nahrávací studio v Plzni s více než 28 lety zkušeností. Váš hudební sen
-              v dobrých rukou.
+              Stručný popis vaší společnosti a jejích hlavních hodnot. Tento text slouží k
+              představení vaší vize.
             </p>
           </div>
 
@@ -72,31 +70,29 @@ export default function Footer() {
               Kontakt
             </h4>
             <a
-              href="mailto:accent@razdva.cz"
+              href="mailto:info@vasedomena.cz"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
             >
-              accent@razdva.cz
+              info@vasedomena.cz
             </a>
             <a
-              href="tel:+420603332100"
+              href="tel:+420000000000"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
             >
-              +420 603 332 100
+              +420 000 000 000
             </a>
             <Link
               href="/contact"
               className="block py-1 text-sm text-[#8888a0] transition-colors duration-300 hover:text-[#f0c040]"
             >
-              Božkovská 38, Plzeň
+              Ulice 123, Město
             </Link>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8">
-          <p className="text-sm text-[#8888a0]">
-            © 2024 Accent Recording Studio. Všechna práva vyhrazena.
-          </p>
+          <p className="text-sm text-[#8888a0]">© 2024 Název Firmy. Všechna práva vyhrazena.</p>
           <div className="flex gap-3">
             {[
               { href: 'https://www.facebook.com', label: 'f', title: 'Facebook' },

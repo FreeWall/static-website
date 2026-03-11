@@ -4,10 +4,9 @@ import { useRouter } from 'next/router';
 
 const navLinks = [
   { href: '/', label: 'Úvod' },
-  { href: '/about', label: 'O nás' }, // Changed /studio to /about to match existing pages
+  { href: '/about', label: 'O nás' },
   { href: '/sluzby', label: 'Služby' },
   { href: '/reference', label: 'Reference' },
-  { href: '/karaoke', label: 'Karaoke' },
 ];
 
 export default function Navbar() {
@@ -38,10 +37,10 @@ export default function Navbar() {
           className="flex flex-col gap-0 leading-none"
         >
           <span className="font-outfit text-xl font-extrabold tracking-wide text-white">
-            Accent
+            Název Firmy
           </span>
           <span className="text-[0.7rem] tracking-[0.18em] text-[#d4a017] uppercase">
-            Recording Studio
+            Podtitul nebo Obor
           </span>
         </Link>
 
@@ -63,7 +62,7 @@ export default function Navbar() {
           ))}
           <li>
             <Link
-              href="/contact" // Changed /kontakt to /contact
+              href="/contact"
               className={`ml-1 rounded bg-gradient-to-br from-[#a07810] to-[#d4a017] px-4 py-2 text-sm font-bold text-black transition-all duration-300 hover:-translate-y-px hover:opacity-90 ${
                 pathname === '/contact' ? 'opacity-90' : ''
               }`}

@@ -9,9 +9,9 @@ const contactItems = [
     label: 'Adresa',
     value: (
       <>
-        Božkovská 38
+        Ulice 123
         <br />
-        326 00 Plzeň
+        123 45 Město
       </>
     ),
   },
@@ -20,10 +20,10 @@ const contactItems = [
     label: 'Telefon',
     value: (
       <a
-        href="tel:+420603332100"
+        href="tel:+420000000000"
         className="text-[#f0c040] transition-opacity hover:opacity-80"
       >
-        +420 603 332 100
+        +420 000 000 000
       </a>
     ),
   },
@@ -32,17 +32,17 @@ const contactItems = [
     label: 'E-mail',
     value: (
       <a
-        href="mailto:accent@razdva.cz"
+        href="mailto:info@vasedomena.cz"
         className="text-[#f0c040] transition-opacity hover:opacity-80"
       >
-        accent@razdva.cz
+        info@vasedomena.cz
       </a>
     ),
   },
   {
     icon: '🕐',
     label: 'Otevírací doba',
-    value: 'Dle domluvy',
+    value: 'Po–Pá: 9:00 – 17:00 (nebo dle dohody)',
   },
 ];
 
@@ -50,10 +50,10 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Kontakt – Accent Recording Studio</title>
+        <title>Kontakt – Název Firmy</title>
         <meta
           name="description"
-          content="Kontaktujte nahrávací studio Accent v Plzni. Adresa, telefon, e-mail, mapa."
+          content="Kontaktujte nás pro více informací o našich službách. Adresa, telefon, e-mail a mapa sídla naší firmy."
         />
       </Head>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
             <span className="text-[#f0c040]">Kontaktujte</span> nás
           </>
         }
-        description="Rádi si s vámi popovídáme o vašem projektu. Ozvěte se telefonicky nebo e-mailem."
+        description="Rádi si s vámi popovídáme o vašem projektu nebo budoucí spolupráci. Ozvěte se nám libovolným způsobem."
       />
 
       {/* Kontaktní info */}
@@ -106,8 +106,8 @@ export default function ContactPage() {
                 <div className="flex flex-wrap gap-3">
                   {[
                     { href: 'https://www.facebook.com', label: 'f Facebook' },
-                    { href: 'https://soundcloud.com', label: '☁ SoundCloud' },
-                    { href: 'https://youtube.com', label: '▶ YouTube' },
+                    { href: 'https://linkedin.com', label: 'in LinkedIn' },
+                    { href: 'https://instagram.com', label: '📷 Instagram' },
                   ].map(({ href, label }) => (
                     <a
                       key={label}
@@ -126,25 +126,23 @@ export default function ContactPage() {
             {/* Kontaktní CTA karta */}
             <FadeUp delay={0.1}>
               <div className="rounded-2xl border border-[rgba(212,160,23,0.25)] bg-gradient-to-br from-[rgba(212,160,23,0.12)] to-[rgba(212,160,23,0.04)] p-10 text-center">
-                <span className="mb-4 block text-4xl">🎙</span>
-                <h3 className="h3-card mb-3 text-[1.4rem] text-white">
-                  Rezervujte nahrávací termín
-                </h3>
+                <span className="mb-4 block text-4xl">✉️</span>
+                <h3 className="h3-card mb-3 text-[1.4rem] text-white">Poptat spolupráci</h3>
                 <p className="mb-8 leading-relaxed text-[#8888a0]">
-                  Zavolejte nebo napište e-mail — rádi vám poradíme s výběrem služby a domluvíme
-                  termín. Konzultace je zdarma.
+                  Zavolejte nebo napište e-mail — rádi s vámi probereme vaše zadání a připravíme
+                  nabídku přímo na míru. Úvodní konzultace je nezávazná.
                 </p>
                 <a
-                  href="tel:+420603332100"
+                  href="tel:+420000000000"
                   className="mb-3 inline-flex w-full items-center justify-center gap-2 rounded bg-gradient-to-br from-[#a07810] to-[#d4a017] px-7 py-3 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
                 >
-                  📞 +420 603 332 100
+                  📞 +420 000 000 000
                 </a>
                 <a
-                  href="mailto:accent@razdva.cz"
+                  href="mailto:info@vasedomena.cz"
                   className="inline-flex w-full items-center justify-center gap-2 rounded border border-white/10 px-7 py-3 text-sm font-semibold text-[#e8e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#d4a017] hover:text-[#f0c040]"
                 >
-                  ✉️ accent@razdva.cz
+                  ✉️ info@vasedomena.cz
                 </a>
               </div>
             </FadeUp>
@@ -162,13 +160,13 @@ export default function ContactPage() {
           <FadeUp>
             <div className="aspect-[16/7] w-full overflow-hidden rounded-2xl border border-white/10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.6437!2d13.3800!3d49.7267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470af153e4b74847%3A0x0!2sBo%C5%BEkovsk%C3%A1+38%2C+326+00+Plze%C5%88!5e0!3m2!1scs!2scz!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.6!2d14.4!3d50.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTWVsbm92!5e0!3m2!1scs!2scz!4v1700000000000"
                 className="h-full w-full border-none"
                 style={{ filter: 'grayscale(0.6) invert(0.9)' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa – Accent Recording Studio, Božkovská 38, Plzeň"
+                title="Mapa – Sídlo firmy, Ulice 123, Město"
               />
             </div>
           </FadeUp>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import FadeUp from '@/components/FadeUp';
 
@@ -22,46 +21,43 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden md:min-h-screen">
-        <div
-          className="absolute inset-0 scale-105 bg-cover bg-center"
-          style={{
-            backgroundImage: "url('/images/studio_hero.png')",
-            filter: 'brightness(0.35) saturate(0.7)',
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-[rgba(10,10,15,0.65)] via-[rgba(10,10,15,0.3)] to-[rgba(10,10,15,0.8)]" />
+        <div className="absolute inset-0 z-0 overflow-hidden bg-[#0c0c12]">
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#1a1a25] via-[#0c0c12] to-[#12121a]" />
+          <div className="absolute inset-0 bg-[radial-gradient(#d4a017_1px,transparent_1px)] [background-size:40px_40px] opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/50 to-[#0a0a0f]" />
+        </div>
         <div className="relative z-10 mx-auto w-[90vw] max-w-[1200px] pt-[72px]">
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#d4a017] uppercase">
-            Plzeň · od roku 1991
+            Lokalita · Od roku 20XX
           </p>
           <h1 className="h1-hero mb-5 text-white">
-            Zvuk, který
+            Nadpis, který
             <br />
-            <span className="text-[#f0c040]">přesahuje čas</span>
+            <span className="text-[#f0c040]">zaujme vaše klienty</span>
           </h1>
           <p className="mb-8 max-w-[55ch] text-lg text-[rgba(232,232,240,0.8)]">
-            Profesionální nahrávací studio s více než 28 lety zkušeností. Nahrávání, mastering,
-            audio/video produkce, dabing a karaoke — vše pod jednou střechou.
+            Stručný a výstižný popis vaší hlavní činnosti. Zde můžete v pár větách představit své
+            největší přednosti a přidanou hodnotu, kterou přinášíte svým zákazníkům.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
               href="/contact"
               className={btnPrimary}
             >
-              <span>📞</span> Zarezervovat termín
+              <span>🚀</span> Hlavní Akce
             </Link>
             <Link
               href="/about"
               className={btnOutline}
             >
-              <span>🎙</span> Prohlédnout studio
+              <span>ℹ️</span> Více informací
             </Link>
           </div>
           <div className="mt-16 flex flex-wrap gap-10">
             {[
-              { num: '28+', label: 'Let zkušeností' },
-              { num: '500+', label: 'Projektů' },
-              { num: '100%', label: 'Spokojenost' },
+              { num: '10+', label: 'Let zkušeností' },
+              { num: '500+', label: 'Spokojených klientů' },
+              { num: '100%', label: 'Spolehlivost' },
             ].map(({ num, label }) => (
               <div
                 key={label}
@@ -82,14 +78,14 @@ export default function HomePage() {
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="flex flex-wrap justify-center gap-2">
             {[
-              '🎵 Nahrávání',
-              '🎚 Mastering',
-              '✂️ Editace',
-              '🎬 Dabing',
-              '🎤 Karaoke',
-              '🎼 Aranžmá',
-              '📀 Publikace',
-              '🎸 Agentura',
+              '✨ Kvalita',
+              '🚀 Rychlost',
+              '🤝 Spolehlivost',
+              '💡 Inovace',
+              '📱 Responzivita',
+              '🎨 Design',
+              '📈 Růst',
+              '🛡️ Bezpečnost',
             ].map((t) => (
               <span
                 key={t}
@@ -102,47 +98,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* O STUDIU */}
+      {/* O NÁS */}
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
             <FadeUp>
-              {badge('O nás')}
-              <h2 className="h2-section mb-2 text-white">Víc než jen nahrávací studio</h2>
+              {badge('Představení')}
+              <h2 className="h2-section mb-2 text-white">Váš partner pro růst a úspěch</h2>
               {accentLine}
               <p className="mt-5 leading-relaxed text-[#8888a0]">
-                Studio Accent vzniklo v roce 1991 v Plzni a od té doby se stalo domovem stovek
-                umělců, kapel a projektů. Naši zkušení zvukáři jsou vašimi partnery — od prvního
-                akkordu po finální master.
+                Zde popište historii a poslání vaší firmy. Jak jste začínali, co vás motivuje a proč
+                děláte to, co děláte. Tento prostor slouží k vybudování důvěry u potenciálního
+                zákazníka.
               </p>
               <p className="mt-3 leading-relaxed text-[#8888a0]">
-                Disponujeme profesionálním vybavením, akusticky ošetřenými prostory a letitými
-                know-how v oblasti záznamu, mixáže, dabingu i specializované karaoke produkce.
+                Můžete zmínit technologie, které používáte, svůj unikátní přístup k práci nebo
+                špičkový tým expertů, který stojí za vaším úspěchem.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/about"
                   className={btnPrimary}
                 >
-                  Prohlédnout studio
+                  Dozvědět se více
                 </Link>
                 <Link
                   href="/sluzby"
                   className={btnOutline}
                 >
-                  Naše služby
+                  Naše nabídka
                 </Link>
               </div>
             </FadeUp>
             <FadeUp delay={0.1}>
-              <Image
-                src="/images/studio_hero.png"
-                alt="Řídicí místnost studia Accent"
-                width={600}
-                height={480}
-                className="max-h-[480px] w-full rounded-2xl border border-white/10 object-cover"
-                loading="lazy"
-              />
+              <div className="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[#444450]">
+                <span className="text-xl">Obrázek týmu / prostor</span>
+              </div>
             </FadeUp>
           </div>
         </div>
@@ -152,44 +143,44 @@ export default function HomePage() {
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <FadeUp className="mb-10 text-center">
-            {badge('Služby')}
-            <h2 className="h2-section mb-2 text-white">Co pro vás uděláme</h2>
+            {badge('Portfolio')}
+            <h2 className="h2-section mb-2 text-white">Co vám nabízíme</h2>
             <span className="mx-auto mt-3 block h-[3px] w-16 rounded bg-gradient-to-r from-[#d4a017] to-[#f0c040]" />
             <p className="mx-auto mt-4 max-w-[56ch] text-[#8888a0]">
-              Komplexní portfolio audio a video služeb pro umělce, firmy i komerční projekty.
+              Přehled hlavních služeb a řešení, které poskytujeme našim klientům na míru.
             </p>
           </FadeUp>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: '🎙',
-                title: 'Nahrávání & Produkce',
-                desc: 'Profesionální nahrávání zpěvu, nástrojů, mluveného slova. Kompletní audio produkce od základů po hotový produkt.',
+                icon: '🛠️',
+                title: 'Služba na míru A',
+                desc: 'Podrobný popis první klíčové služby. Vysvětlete, v čem spočívá její hlavní přínos pro zákazníka.',
               },
               {
-                icon: '🎚',
-                title: 'Mix & Mastering',
-                desc: 'Pečlivý mix se zachováním charakteru nahrávky. Mastering připravený pro streamovací platformy, CD i vinyl.',
+                icon: '⚡',
+                title: 'Rychlá implementace',
+                desc: 'Vysvětlete, jak efektivně a rychle dokážete doručit výsledky bez ztráty kvality.',
               },
               {
-                icon: '🎬',
-                title: 'Dabing & Hlas',
-                desc: 'Profesionální dabing filmů, reklam a firemních videí. Spolupracujeme s ostřílenými hlasovými herci.',
+                icon: '📊',
+                title: 'Analýza a Strategie',
+                desc: 'Popište svůj proces plánování a analytický přístup, který zajišťuje nejlepší možné výsledky.',
               },
               {
-                icon: '🎤',
-                title: 'Karaoke Produkce',
-                desc: 'Specializovaná výroba karaoke stop v profesionální kvalitě. Provozujeme také online shop karaokesong.eu.',
+                icon: '🛡️',
+                title: 'Podpora a Servis',
+                desc: 'Garance kvality a následná péče o klienta, kterou poskytujete po dokončení zakázky.',
               },
               {
-                icon: '🎸',
-                title: 'Umělecká Agentura',
-                desc: 'Zastupujeme kapely ABBA Star, Sifon Original, Queenways a Electric Therapy. Zajišťujeme ozvučení akcí.',
+                icon: '🌐',
+                title: 'Moderní Technologie',
+                desc: 'Využití nejnovějších postupů a nástrojů v oboru, které vám dávají náskok před konkurencí.',
               },
               {
-                icon: '🎼',
-                title: 'Kompozice & Aranžmá',
-                desc: 'Komponujeme hudbu na míru, aranžujeme pro různé obsazení, píšeme partitury a MIDI produkce.',
+                icon: '💎',
+                title: 'Prémiová Kvalita',
+                desc: 'Důraz na detail a vysokou úroveň zpracování u každého projektu bez výjimek.',
               },
             ].map(({ icon, title, desc }, i) => (
               <FadeUp
@@ -211,48 +202,42 @@ export default function HomePage() {
               href="/sluzby"
               className={btnPrimary}
             >
-              Zobrazit ceník
+              Kompletní ceník
             </Link>
           </div>
         </div>
       </section>
 
-      {/* PRO UMĚLCE */}
+      {/* PRO PARTNERY */}
       <section className="w-full py-24">
         <div className="mx-auto w-[90vw] max-w-[1200px]">
           <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
             <FadeUp>
-              <Image
-                src="/images/studio_booth.png"
-                alt="Nahrávání v studiovém kabině"
-                width={600}
-                height={480}
-                className="max-h-[480px] w-full rounded-2xl border border-white/10 object-cover"
-                loading="lazy"
-              />
+              <div className="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[#444450]">
+                <span className="text-xl">Obrázek produktu / výsledku</span>
+              </div>
             </FadeUp>
             <FadeUp delay={0.1}>
-              {badge('Pro umělce')}
-              <h2 className="h2-section mb-2 text-white">Váš zvuk, vaše vize</h2>
+              {badge('Proč my')}
+              <h2 className="h2-section mb-2 text-white">Vize dotažená k dokonalosti</h2>
               {accentLine}
               <p className="mt-5 leading-relaxed text-[#8888a0]">
-                Ať jste začínající zpěvák nebo etablovaná kapela, přistupujeme ke každému projektu
-                individuálně. Naším cílem je zachytit váš originální zvuk a přivést ho k
-                dokonalosti.
+                Proč byste měli spolupracovat právě s námi? Zakládáme si na individuálním přístupu
+                ke každému projektu a na transparentnosti celého procesu.
               </p>
               <div className="mt-6 flex flex-col gap-3">
                 {[
                   {
-                    title: 'Zvukotěsná nahrávací kabina',
-                    sub: 'Ideální pro zpěv, akustické nástroje a mluvené slovo',
+                    title: 'Individuální přístup',
+                    sub: 'Všechna řešení navrhujeme přesně podle vašich potřeb a cílů',
                   },
                   {
-                    title: 'Akusticky ošetřená řídicí místnost',
-                    sub: 'Přesné referenční poslechy pro spolehlivý mix',
+                    title: 'Transparentní komunikace',
+                    sub: 'O průběhu projektu budete mít vždy aktuální a přehledné informace',
                   },
                   {
-                    title: 'Profesionální konzole & hardware',
-                    sub: 'Analogový teplo i digitální přesnost v jednom',
+                    title: 'Odbornost a certifikace',
+                    sub: 'Náš tým pravidelně sleduje nejnovější trendy v oboru',
                   },
                 ].map(({ title, sub }) => (
                   <div
@@ -275,24 +260,25 @@ export default function HomePage() {
       {/* CTA BANNER */}
       <section className="w-full border-t border-white/10 bg-[#111118] py-24">
         <div className="mx-auto w-[90vw] max-w-[700px] text-center">
-          {badge('Začněte dnes')}
+          {badge('Kontaktujte nás')}
           <FadeUp>
-            <h2 className="h2-section mb-3 text-white">Připraveni nahrávat?</h2>
+            <h2 className="h2-section mb-3 text-white">Připraveni na další krok?</h2>
             <p className="mb-8 text-base text-[#8888a0]">
-              Kontaktujte nás a domluvíme termín, který vám vyhovuje. Konzultace zdarma.
+              Rádi s vámi probereme váš projekt a navrhneme nejlepší možné řešení. Nezávazná
+              konzultace je samozřejmostí.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
                 className={btnPrimary}
               >
-                📞 Kontaktovat studio
+                ✉️ Odeslat poptávku
               </Link>
               <Link
                 href="/reference"
                 className={btnOutline}
               >
-                🎵 Ukázky nahrávek
+                🎨 Naše reference
               </Link>
             </div>
           </FadeUp>
