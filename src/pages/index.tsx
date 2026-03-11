@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import FadeUp from '@/components/FadeUp';
 
@@ -21,10 +22,16 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden md:min-h-screen">
-        <div className="absolute inset-0 z-0 overflow-hidden bg-[#0c0c12]">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#1a1a25] via-[#0c0c12] to-[#12121a]" />
-          <div className="absolute inset-0 bg-[radial-gradient(#d4a017_1px,transparent_1px)] [background-size:40px_40px] opacity-20" />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <Image
+            src="/images/placeholder_hero.webp"
+            alt="Profesionální pozadí šablony"
+            fill
+            className="object-cover opacity-60 brightness-50 grayscale-[0.2]"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/50 to-[#0a0a0f]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f] via-transparent to-transparent opacity-80" />
         </div>
         <div className="relative z-10 mx-auto w-[90vw] max-w-[1200px] pt-[72px]">
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#d4a017] uppercase">

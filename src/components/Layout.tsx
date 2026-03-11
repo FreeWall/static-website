@@ -5,9 +5,9 @@ interface LayoutProps extends React.PropsWithChildren {}
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex min-h-screen w-full flex-col">
+    <div>
       <Navbar />
-      <main className="flex w-full flex-1 flex-col items-center">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
