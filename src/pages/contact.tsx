@@ -58,7 +58,6 @@ export default function ContactPage() {
       </Head>
 
       <PageHero
-        badge="Napište nám"
         title={
           <>
             <span className="text-[#f0c040]">Kontaktujte</span> nás

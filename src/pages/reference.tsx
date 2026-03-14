@@ -70,7 +70,6 @@ export default function ReferencePage() {
       </Head>
 
       <PageHero
-        badge="Naše práce"
         title={
           <>
             Reference & <span className="text-[#f0c040]">Projekty</span>

@@ -48,7 +48,6 @@ export default function AboutPage() {
       </Head>
 
       <PageHero
-        badge="Naše společnost"
         title={
           <>
             Kdo <span className="text-[#f0c040]">Jsme</span>

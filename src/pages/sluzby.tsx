@@ -143,7 +143,6 @@ export default function SluzbyPage() {
       </Head>
 
       <PageHero
-        badge="Nabídka"
         title={
           <>
             Služby & <span className="text-[#f0c040]">Ceník</span>

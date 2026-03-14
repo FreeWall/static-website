@@ -27,11 +27,10 @@ export default function HomePage() {
             src="/images/placeholder_hero.webp"
             alt="Profesionální pozadí šablony"
             fill
-            className="object-cover opacity-60 brightness-50 grayscale-[0.2]"
+            className="object-cover brightness-50"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/50 to-[#0a0a0f]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f] via-transparent to-transparent opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/30 to-[#0a0a0f]" />
         </div>
         <div className="relative z-10 mx-auto w-[90vw] max-w-[1200px] pt-[72px]">
           <p className="mb-4 text-xs font-semibold tracking-[0.2em] text-[#d4a017] uppercase">
