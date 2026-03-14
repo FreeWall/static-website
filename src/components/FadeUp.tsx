@@ -15,7 +15,7 @@ export default function FadeUp({ children, className = '', delay = 0 }: FadeUpPr
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           setVisible(true);
           observer.unobserve(el);
         }
