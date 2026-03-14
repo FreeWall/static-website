@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "FreeWall",
   "license": "MIT",
+  "homepage": "https://static-website.michalvanek.cz",
   "repository": "https://github.com/FreeWall/static-website",
   "scripts": {
     "dev": "yarn && cross-env NODE_OPTIONS='--inspect' next dev",
