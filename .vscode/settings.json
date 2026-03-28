@@ -3,7 +3,7 @@
     "@tw\\s\\*\/\\s+[\"'`]([^\"'`]*)",
     ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"]
   ],
-  "eslint.validate": ["typescript"],
+  "eslint.validate": ["typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll": "always"
   }

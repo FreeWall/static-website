@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import FadeUp from '@/components/FadeUp';
 
 const badge = (text: string) => (
