@@ -3,6 +3,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "bradlc.vscode-tailwindcss",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "jlcodes.antigravity-cockpit"
   ]
 }

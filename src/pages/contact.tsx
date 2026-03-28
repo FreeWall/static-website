@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import PageHero from '@/components/PageHero';
+
 import FadeUp from '@/components/FadeUp';
+import PageHero from '@/components/PageHero';
 
 const contactItems = [
   {

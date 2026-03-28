@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import PageHero from '@/components/PageHero';
+
 import FadeUp from '@/components/FadeUp';
+import PageHero from '@/components/PageHero';
 
 const btnPrimary =
   'inline-flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold text-black bg-gradient-to-br from-[#a07810] to-[#d4a017] hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300';
