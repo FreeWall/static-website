@@ -1,3 +1,5 @@
+test
+
 # 🌐 Statický Web (FreeWall)
 
 Moderní a vysoce výkonná statická webová aplikace vytvořená pomocí nejnovějších technologií. Tento projekt je optimalizován pro rychlost, skvělou uživatelskou zkušenost a snadnou údržbu.
