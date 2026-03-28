@@ -2,7 +2,4 @@
 trigger: always_on
 ---
 
-- Pokud tě požádám, abys spustil stránky, spusť je lokálně v dev modu příkazem "yarn dev".
-- Zkontroluj že stránky běží přesně tímto příkazem: "curl [address]". Zkus pouze homepage, neotevírej prohlížeč.
-- Nedělej žádné screenshoty ani playbacky.
-- Po kontrole napiš do chatu zprávu s lokální adresou stránek.
+Pokud tě požádám, abys spustil stránky, nic nespouštěj a odpověz mi, že stránky můžu spustit pomocí klávesy `[F5]` a vybráním úlohy `Spustit lokální server`.
