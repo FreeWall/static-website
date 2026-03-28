@@ -51,12 +51,12 @@ git fetch $REMOTE
 # 8. Sledování GitHub Pages deploye
 echo "⏳ Čekám na GitHub Pages deploy (gh run watch)..."
 # Získá ID posledního běhu pro Pages a čeká na dokončení
-RUN_ID=$(gh run list --workflow "pages-build-deployment" --limit 1 --json databaseId --jq '.[0].databaseId')
+RUN_ID=$(gh run list --workflow "Deploy to GitHub Pages" --limit 1 --json databaseId --jq '.[0].databaseId')
 if [ -n "$RUN_ID" ]; then
     gh run watch "$RUN_ID"
     echo "✅ Stránky byly úspěšně nasazeny!"
 else
-    echo "⚠️ Nepodařilo se najít aktivní 'pages-build-deployment' run."
+    echo "⚠️ Nepodařilo se najít aktivní 'Deploy to GitHub Pages' run."
 fi
 
 # 9. Výpis URL
