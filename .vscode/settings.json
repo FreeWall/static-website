@@ -6,5 +6,12 @@
   "eslint.validate": ["typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll": "always"
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/yarn.lock": true,
+    "**/coin-data/coin-list.json": true,
+    "**/coin-data/platforms.json": true,
+    "**/integration-tests": true
   }
 }
