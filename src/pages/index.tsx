@@ -70,8 +70,10 @@ export default function HomePage() {
                 key={label}
                 className="flex flex-col"
               >
-                <span className="h3-card text-4xl leading-none text-[#f0c040]">{num}</span>
-                <span className="mt-1 text-xs tracking-widest text-[#8888a0] uppercase">
+                <span className="font-head text-4xl leading-none font-bold text-[#f0c040]">
+                  {num}
+                </span>
+                <span className="mt-1 text-xs tracking-widest text-[rgba(232,232,240,0.8)] uppercase">
                   {label}
                 </span>
               </div>
